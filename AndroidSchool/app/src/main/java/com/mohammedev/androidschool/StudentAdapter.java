@@ -28,16 +28,16 @@ class StudentAdapter extends ArrayAdapter<Student> {
         Student currentStudent = getItem(position);
 
         TextView name = view.findViewById(R.id.studentName);
-        name.setText("اسم الطالب/ة: "+currentStudent.getStudentName());
+        name.setText("studentname: "+currentStudent.getStudentname());
 
         TextView age = view.findViewById(R.id.studentAge);
-        age.setText("العمر: "+currentStudent.getStudentAge()+"");
+        age.setText("studentage: "+currentStudent.getStudentage()+"");
 
         TextView grade = view.findViewById(R.id.studentGrade);
-        grade.setText("الصف: "+currentStudent.getStudentGrade()+"");
+        grade.setText("studentgrade: "+currentStudent.getStudentgrade()+"");
 
         ImageView image = view.findViewById(R.id.studentImage);
-        image.setImageResource(currentStudent.getStudentImg());
+        image.setImageResource(currentStudent.getStudentphoto());
         return view;
     }
 }

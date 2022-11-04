@@ -14,7 +14,6 @@ public class Student {
         this.studentgrade = studentgrade;
     }
 
-
     public String getStudentname() {
         return studentname;
     }
